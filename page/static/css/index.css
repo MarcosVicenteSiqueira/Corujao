@@ -1,0 +1,594 @@
+    /* Código geral, que será herdado por qualquer dispositivos.
+       nesse caso, seria o código usado no desktop, na maioria das   vezes.
+       Se você já conhecer a ideia do Mobile First, esse primeiro código será destinado para mobiles.
+    */
+    .fundo-img img{
+     width:100%;
+     height:50%;
+    }
+
+
+
+	 .menu nav ul{
+		list-style-type: none;
+		background-color: black;
+    opacity: 1.3;
+    filter: alpha(opacity=130); /* For IE8 and earlier */
+		margin: -10px -20px  0px -10px;
+		padding: 10px 0px;
+   	position: fixed;
+    width: 100%;
+
+	}
+
+	 .menu  nav ul li{
+		display: block;
+		text-align: center;
+		margin: 10px 20px 10px 20px;
+		font-size: 20px;
+		padding: 0px 10px 0px 10px;
+
+	}
+ 	 .menu  nav ul li a{
+  		color: white;
+  		text-decoration: none;
+
+
+  	}
+
+
+
+
+
+
+  	.historia-geral-texto{
+  		margin: 10px 20px ;
+  	}
+  	.historia-geral-texto  h1{
+  		text-align: center;
+  		font-size: 25px;
+  		margin: 20px 0px;
+
+ 	}
+ 	.historia-geral-texto p {
+     		font-size: 15px;
+     		text-align: center;
+     		color: green;
+}
+  .events ul li{
+      list-style-type: none;
+      background-color: black;
+
+      padding: 10px;
+      margin: 10px;
+      border-radius: 20px;
+  }
+
+  .events ul li a{
+      text-decoration: none;
+      color: white;
+      float: left;
+      margin-bottom: 20px;
+      display: block;
+
+  }
+  .events ul li img{
+      margin: 20px;
+
+  }
+  .contato{
+    margin: 15px 150px;
+
+  }
+  .contato form p #id_nome {
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    background-color:black;
+    color: white;
+    font-size: 30px;
+  }
+  .contato form label {
+    font-size: 30px;
+
+
+  }
+
+  .contato form p #id_dd_telefone {
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+
+    width: 80px;
+  }
+  .contato form p #id_numero_telefone {
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+
+  }
+  .contato form p #id_email {
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+  }
+  .contato form p #id_texto {
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+  }
+  .contato form input{
+  font-size: 40px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+  .rodape{
+       text-align: center;
+        background-color: black;
+        margin: 0px 6px -10px 6px;
+        font-size: 10px;
+        padding: 2px;
+        color: white;
+    }
+
+    /*
+     Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+    */
+    @media screen and (min-width: 768px) {
+       .fundo-img img{
+     width:100%;
+
+     height:60%;
+    }
+
+      	 .menu nav ul{
+      		list-style-type: none;
+          background-color: black;
+          opacity: 0.9;
+          filter: alpha(opacity=90); /* For IE8 and earlier */
+      		margin: -10px -20px 0px -20px;
+      		padding: 10px 0px;
+      		position: fixed;
+    		width: 100%;
+      	}
+      	 .menu  nav ul li{
+      		display: inline;
+      		margin: 10px 20px 0px 20px;
+      		font-size: 20px;
+      		padding: 50px 10px 20px 10px;
+
+     		}
+
+
+       	.menu nav ul li a{
+        		color: white;
+        		text-decoration: none;
+        	}
+        	.historia-geral-texto{
+        		margin: 10px 20px;
+        	}
+        	.historia-geral-texto  h1{
+        		font-size: 35px;
+        		margin: 30px 10px;
+
+       	}
+       	.historia-geral-texto p {
+       		font-size: 20px;
+       		color: blue;
+       	}.events {
+
+
+        }
+        .events ul{
+
+
+
+        }
+        .events ul li{
+            list-style-type: none;
+            background-color: black;
+
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+        .events ul li a{
+            text-decoration: none;
+            color: white;
+            float: left;
+        }
+        .events ul li img{
+            margin: 20px;
+        }
+        .contato{
+          margin: 15px 250px;
+        }
+        .contato form p #id_nome {
+          -webkit-border-radius: 55px;
+          -moz-border-radius: 55px;
+          border-radius: 55px;
+          background-color:black;
+          color: white;
+          font-size: 30px;
+        }
+        .contato form label {
+          font-size: 30px;
+        }
+
+        .contato form p #id_dd_telefone {
+          -webkit-border-radius: 55px;
+          -moz-border-radius: 55px;
+          border-radius: 55px;
+          background-color: black;
+          color: white;
+          font-size: 30px;
+          width: 80px;
+        }
+        .contato form p #id_numero_telefone {
+          -webkit-border-radius: 55px;
+          -moz-border-radius: 55px;
+          border-radius: 55px;
+          background-color: black;
+          color: white;
+          font-size: 30px;
+
+        }
+        .contato form p #id_email {
+          -webkit-border-radius: 55px;
+          -moz-border-radius: 55px;
+          border-radius: 55px;
+          background-color: black;
+          color: white;
+          font-size: 30px;
+        }
+        .contato form p #id_texto {
+          -webkit-border-radius: 55px;
+          -moz-border-radius: 55px;
+          border-radius: 20px;
+          background-color: black;
+          color: white;
+          font-size: 30px;
+        }
+        .contato form input{
+        font-size: 40px;
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+      }
+       	.rodape{
+  			text-align: center;
+  			background-color: black;
+     		margin: 0px 6px -10px 6px;
+     		font-size: 10px;
+     		padding: 2px;
+     		color: white;
+		    }
+    }
+
+    /*
+     Com uma largura mínima de 992 pixels. Monitores por exemplo.
+    */
+    @media screen and (min-width: 992px) {
+     .fundo-img img{
+		 width:100%;
+
+		 height:60%;
+    }
+
+		.menu nav ul{
+    		list-style-type: none;
+        background-color: black;
+        opacity: 0.9;
+        filter: alpha(opacity=90); /* For IE8 and earlier */
+    		margin: -10px -20px 0px -20px;
+    		padding: 10px 0px;
+    		position: fixed;
+    		width: 100%;
+    	}
+    	.menu nav ul li{
+    		display: inline;
+    		margin: 10px 20px 0px 10px;
+    		font-size: 20px;
+    		padding: 50px 10px 50px 10px;
+
+   		}
+
+
+     	.menu nav  ul li a{
+      		color: white;
+      		text-decoration: none;
+      	}
+      	.historia-geral-texto{
+      		margin: 20px 60px;
+      	}
+      	.historia-geral-texto  h1{
+      		font-size: 40px;
+      		margin: 30px 10px;
+
+     	}
+     	.historia-geral-texto p {
+     		font-size: 30px;
+     		color: red;
+     	}
+      .events {
+
+
+      }
+      .events ul{
+
+
+
+      }
+      .events ul li{
+          list-style-type: none;
+          background-color: black;
+
+          padding: 20px;
+          margin: 20px;
+          border-radius: 20px;
+      }
+
+
+      .events ul li a{
+          text-decoration: none;
+          color: white;
+          float: left;
+
+      }
+      .events ul li img{
+          margin: 20px;
+
+      }
+      .contato{
+        margin: 15px 250px;
+
+      }
+      .contato form p #id_nome {
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 55px;
+        background-color:black;
+        color: white;
+        font-size: 30px;
+      }
+      .contato form label {
+        font-size: 30px;
+
+
+      }
+
+      .contato form p #id_dd_telefone {
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 55px;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+
+        width: 80px;
+      }
+      .contato form p #id_numero_telefone {
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 55px;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+
+      }
+      .contato form p #id_email {
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 55px;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+      }
+      .contato form p #id_texto {
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+      }
+      .contato form input{
+      font-size: 40px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+    }
+
+      .rodape {
+			text-align: center;
+			background-color: black;
+    	margin: 8px 8px 0px 8px;
+    	font-size: 15px;
+    	padding: 2px;
+    	color: white;
+		  }
+
+    }
+
+    /*
+     Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+    */
+    @media screen and (min-width: 1200px) {
+    .fundo-img{
+        margin: 0px 4% 0px 20%;
+    }
+     .fundo-img img{
+        width:100%;
+        height:80%;
+    }
+
+
+	.menu nav  ul{
+		list-style-type: none;
+    background-color: black;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+		margin: -10px -20px 0px -20px;
+		position: fixed;
+    	width: 100%;
+
+	}
+	.menu nav  ul li{
+		display: inline;
+
+		margin: 0px 20px 0px 20px;
+		font-size: 20px;
+		padding: 50px 20px 50px 20px;
+
+		}
+ 	.menu nav ul li a{
+  		color: white;
+  		text-decoration: none;
+
+  	}
+    .menu nav  ul li a:hover{
+      background-color: gray;
+      padding: 10px;
+  	}
+
+  	.historia-geral-texto{
+  		margin: 20px 80px 20px 80px;
+  	}
+  	.historia-geral-texto  h1{
+  		font-size: 50px;
+  		margin: 40px 20px;
+
+   	}
+   	.historia-geral-texto p {
+   		font-size: 30px;
+   		color: yellow;
+   	}
+    .contato{
+      margin: 20px 400px;
+    }
+
+    .contato form p #id_nome {
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      border-radius: 55px;
+      background-color:black;
+      color: white;
+      font-size: 30px;
+    }
+    
+    .contato form label {
+      font-size: 30px;
+
+
+    }
+
+    .contato form p #id_dd_telefone {
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      border-radius: 55px;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+
+      width: 80px;
+    }
+    .contato form p #id_numero_telefone {
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      border-radius: 55px;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+
+    }
+    .contato form p #id_email {
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      border-radius: 55px;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+    }
+    .contato form p #id_texto {
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      border-radius: 20px;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+    }
+
+    .contato form input{
+        font-size: 40px;
+
+
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+
+    }
+    .events {
+
+
+    }
+    .events ul{
+
+
+
+    }
+    .events ul li{
+        list-style-type: none;
+        background-color: black;
+
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+
+    .events ul li a{
+        text-decoration: none;
+        color: white;
+        float: left;
+
+    }
+    .events ul li img{
+        margin: 20px;
+
+    }
+   	.rodape{
+  		text-align: center;
+  		background-color: black;
+  		margin: 10px 10px 0px 10px;
+  		font-size: 20px;
+  		padding: 2px;
+  		color: white;
+  	}
+
+
+
+
+  }

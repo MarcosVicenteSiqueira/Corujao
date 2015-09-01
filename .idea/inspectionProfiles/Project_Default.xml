@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="page.page.views" />
+          <option value="page.core.models.OverwriteStorage" />
+          <option value="page.core.templadetags.core_tags.models" />
+          <option value="page.core.templadetags.core_tags.register" />
+          <option value="django.db.models.get_model" />
+          <option value="page.core.templadetags.core_tags.slug" />
+          <option value="models.Fotos" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

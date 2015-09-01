@@ -1,0 +1,29 @@
+
+    <div id="contatos" class="contato">
+			<form action="." method="POST">{% csrf_token %}
+    				{{ form_comment.as_p }}
+    				<input type="submit" value="Enviar">
+				</form>
+    </div>
+
+
+
+
+
+
+<!--
+<div class="comment" id="comentario">
+    <form action="/comment/" method="POST">{% csrf_token %}
+        <label for="id_name_comment">Nome:</label>
+        <input id="id_name_comment" maxlength="100" name="name_comment" type="text" value="{{form_comment.name_comment}}">
+
+        <label for="id_email">Email:</label>
+        <input id="id_email" maxlength="200" name="email" type="email" value="{{ commment.email}}" />
+
+        <label for="id_cometario">Comentário</label>
+        <textarea cols="40" id="id_cometario" name="texto" rows="10" value="comentario"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+</div>
+-->

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title%} Home {% endblock %}
+
+{% block content%}
+{% load staticfiles %}
+{% include "menu.html" %}
+
+	<div class="fundo">
+		<div class="fundo-img" id="historia">
+			<img src="{% static "imagens/cidade-noturna.jpeg" %}"/>
+		</div>
+
+	</div>
+
+
+
+	<div  class="historia-geral">
+		<div class="historia-geral-texto">
+			<header>
+				<h1 class="historia-geral-texto" >Historia do corujão</h1>
+			</header>
+
+
+			<p class="historia-geral-texto"> historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia </p>
+		</div>
+
+		<div class="events"  id="eventos">
+
+			<ul>
+			{% for event in events %}
+				<li>
+					<a href="event/{{ event.slug }}"><h2>{{ event.titulo}}</h2></a>
+					<img src="media/{{ event.imagem}}">
+
+
+				</li>
+			{% endfor %}
+			</ul>
+
+		</div>
+
+		<div id="rede-social" class="redes-social">
+
+		</div>
+
+		<div id="contatos" class="contato">
+
+				<form action="." method="POST">{% csrf_token %}
+    				{{form.as_p }}
+    				<input type="submit" value="Enviar">
+				</form>
+		</div>
+
+
+
+	</div>
+	{% include "rodape.html" %}
+{% endblock%}
