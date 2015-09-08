@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{%for albuns in album %}
+    <p>{{ albuns.nome }}<p>
+    <img src="{{albuns.name}}">
+{% endfor %}
+<img src="{{albuns.foto}}">

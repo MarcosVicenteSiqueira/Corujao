@@ -6,7 +6,7 @@ from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from django.forms import forms
 
-from .models import Event, Contact, Comment
+from .models import Event, Contact, Comment, Foto, Galeria
 from forms import ContactForm, CommentForms
 
 def home(request):
@@ -48,11 +48,18 @@ def comment(request):
 def event(request, slug):
     event = Event.objects.get(slug=slug)
     comment = Comment.objects.all()
-
     return render_to_response('events.html',locals(),
         context_instance=RequestContext(request))
 
+def foto(request, slug):
+    foto =  Foto.objects.get(slug=slug)
+    return render(request, 'fotos.html',
+    { 'foto':foto,}
+    )
 
+def album(request, slug):
+    album =  Galeria.objects.all()
+    return render(request, 'album.html',{'album':album})
 
 def thanks(request):
     return render(request, 'thanks.html')

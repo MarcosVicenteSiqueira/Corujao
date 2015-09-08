@@ -7,8 +7,6 @@ from photologue.models import Gallery
 from taggit.managers import TaggableManager
 
 
-
-
 class Event(models.Model):
     class Meta:
         ordering = ('-data',)
@@ -16,7 +14,7 @@ class Event(models.Model):
     titulo = models.CharField(max_length=50)
     data = models.DateTimeField('date published')
     imagem = models.ImageField(upload_to='event/')
-    video = models.FileField(upload_to='event/')
+    galeria = models.OneToOneField('Galeria')
     text = models.TextField()
     slug = models.SlugField(max_length=100, blank=True, unique=True)
 
@@ -39,6 +37,27 @@ class GalleryExtended(models.Model):
     def __unicode__(self):
         return self.gallery.title
 
+class Galeria(models.Model):
+    nome = models.CharField(max_length=200)
+    slug = models.SlugField(unique=True)
+    foto = models.ManyToManyField('Foto')
+
+    def get_absolute_url(self):
+        return reverse('core.views.galeria',(), kwargs={'slug': self.slug})
+    def __unicode__(self):
+        return self.nome
+
+class Foto(models.Model):
+    name = models.CharField(max_length=200)
+    slug = models.SlugField(unique=True)
+    imagem = models.ImageField(upload_to='foto/')
+    descricao = models.TextField(blank=True)
+
+    def get_absolute_url(self):
+        return reverse('core.views.foto',(), kwargs={'slug': self.slug})
+
+    def __unicode__(self):
+        return self.name
 
 
 class Contact(models.Model):

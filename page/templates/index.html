@@ -8,7 +8,7 @@
 
 	<div class="fundo">
 		<div class="fundo-img" id="historia">
-			<img src="{% static "imagens/cidade-noturna.jpeg" %}"/>
+			<img src="{% static "imagens/capa-corujao.jpg" %}"/>
 		</div>
 
 	</div>
@@ -29,18 +29,21 @@
 
 			<ul>
 			{% for event in events %}
-				<li>
-					<a href="event/{{ event.slug }}"><h2>{{ event.titulo}}</h2></a>
-					<img src="media/{{ event.imagem}}">
-
-
-				</li>
+				<a href="event/{{ event.slug }}">
+					<li>
+						<h2>{{ event.titulo}}</h2>
+						<img src="media/{{ event.imagem}}">
+					</li>
+				</a>
 			{% endfor %}
 			</ul>
 
 		</div>
 
-		<div id="rede-social" class="redes-social">
+		<div  class="redes-social">
+			<img src="{% static "imagens/Facebook.png" %}">
+			<img src="{% static "imagens/Instagram.png" %}" id="rede-social">
+			<img src="{% static "imagens/Twitter.png" %}">
 
 		</div>
 

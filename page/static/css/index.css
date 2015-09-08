@@ -5,6 +5,7 @@
     .fundo-img img{
      width:100%;
      height:50%;
+     margin-top: 160px;
     }
 
 
@@ -55,16 +56,16 @@
      		text-align: center;
      		color: green;
 }
-  .events ul li{
+  .events ul  a li{
       list-style-type: none;
       background-color: black;
 
       padding: 10px;
       margin: 10px;
-      border-radius: 20px;
+
   }
 
-  .events ul li a{
+  .events a{
       text-decoration: none;
       color: white;
       float: left;
@@ -77,27 +78,24 @@
 
   }
   .contato{
-    margin: 15px 150px;
+    margin: 15px 100px;
 
   }
   .contato form p #id_nome {
-    -webkit-border-radius: 55px;
-    -moz-border-radius: 55px;
-    border-radius: 55px;
+
     background-color:black;
     color: white;
     font-size: 30px;
   }
   .contato form label {
     font-size: 30px;
+    margin-right: 20px;
 
 
   }
 
   .contato form p #id_dd_telefone {
-    -webkit-border-radius: 55px;
-    -moz-border-radius: 55px;
-    border-radius: 55px;
+
     background-color: black;
     color: white;
     font-size: 30px;
@@ -105,35 +103,27 @@
     width: 80px;
   }
   .contato form p #id_numero_telefone {
-    -webkit-border-radius: 55px;
-    -moz-border-radius: 55px;
-    border-radius: 55px;
+
     background-color: black;
     color: white;
     font-size: 30px;
 
   }
   .contato form p #id_email {
-    -webkit-border-radius: 55px;
-    -moz-border-radius: 55px;
-    border-radius: 55px;
+
     background-color: black;
     color: white;
     font-size: 30px;
   }
   .contato form p #id_texto {
-    -webkit-border-radius: 55px;
-    -moz-border-radius: 55px;
-    border-radius: 20px;
+
     background-color: black;
     color: white;
     font-size: 30px;
   }
   .contato form input{
   font-size: 40px;
-  -webkit-border-radius: 55px;
-  -moz-border-radius: 55px;
-  border-radius: 20px;
+
   background-color: black;
   color: white;
 }
@@ -152,10 +142,10 @@
     */
     @media screen and (min-width: 768px) {
        .fundo-img img{
-     width:100%;
-
-     height:60%;
-    }
+         width:100%;
+         margin: 0px;
+         height:60%;
+        }
 
       	 .menu nav ul{
       		list-style-type: none;
@@ -165,7 +155,7 @@
       		margin: -10px -20px 0px -20px;
       		padding: 10px 0px;
       		position: fixed;
-    		width: 100%;
+    		  width: 100%;
       	}
       	 .menu  nav ul li{
       		display: inline;
@@ -191,28 +181,20 @@
        	.historia-geral-texto p {
        		font-size: 20px;
        		color: blue;
-       	}.events {
-
-
-        }
-        .events ul{
-
-
-
-        }
+       	}
         .events ul li{
             list-style-type: none;
             background-color: black;
 
             padding: 20px;
             margin: 20px;
-            border-radius: 20px;
+
         }
 
         .events ul li a{
             text-decoration: none;
             color: white;
-            float: left;
+            text-align: center;
         }
         .events ul li img{
             margin: 20px;
@@ -221,9 +203,7 @@
           margin: 15px 250px;
         }
         .contato form p #id_nome {
-          -webkit-border-radius: 55px;
-          -moz-border-radius: 55px;
-          border-radius: 55px;
+
           background-color:black;
           color: white;
           font-size: 30px;
@@ -233,44 +213,33 @@
         }
 
         .contato form p #id_dd_telefone {
-          -webkit-border-radius: 55px;
-          -moz-border-radius: 55px;
-          border-radius: 55px;
+
           background-color: black;
           color: white;
           font-size: 30px;
           width: 80px;
         }
         .contato form p #id_numero_telefone {
-          -webkit-border-radius: 55px;
-          -moz-border-radius: 55px;
-          border-radius: 55px;
+
           background-color: black;
           color: white;
           font-size: 30px;
 
         }
         .contato form p #id_email {
-          -webkit-border-radius: 55px;
-          -moz-border-radius: 55px;
-          border-radius: 55px;
+
           background-color: black;
           color: white;
           font-size: 30px;
         }
         .contato form p #id_texto {
-          -webkit-border-radius: 55px;
-          -moz-border-radius: 55px;
-          border-radius: 20px;
+
           background-color: black;
           color: white;
           font-size: 30px;
         }
         .contato form input{
-        font-size: 40px;
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 20px;
+
         background-color: black;
         color: white;
       }
@@ -329,29 +298,21 @@
      		font-size: 30px;
      		color: red;
      	}
-      .events {
 
-
-      }
-      .events ul{
-
-
-
-      }
       .events ul li{
           list-style-type: none;
           background-color: black;
 
           padding: 20px;
           margin: 20px;
-          border-radius: 20px;
+
       }
 
 
       .events ul li a{
           text-decoration: none;
           color: white;
-          float: left;
+          text-align: center;
 
       }
       .events ul li img{
@@ -363,9 +324,7 @@
 
       }
       .contato form p #id_nome {
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 55px;
+
         background-color:black;
         color: white;
         font-size: 30px;
@@ -377,9 +336,7 @@
       }
 
       .contato form p #id_dd_telefone {
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 55px;
+
         background-color: black;
         color: white;
         font-size: 30px;
@@ -387,35 +344,27 @@
         width: 80px;
       }
       .contato form p #id_numero_telefone {
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 55px;
+
         background-color: black;
         color: white;
         font-size: 30px;
 
       }
       .contato form p #id_email {
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 55px;
+
         background-color: black;
         color: white;
         font-size: 30px;
       }
       .contato form p #id_texto {
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 20px;
+
         background-color: black;
         color: white;
         font-size: 30px;
       }
       .contato form input{
       font-size: 40px;
-      -webkit-border-radius: 55px;
-      -moz-border-radius: 55px;
-      border-radius: 20px;
+
       background-color: black;
       color: white;
     }
@@ -434,13 +383,10 @@
     /*
      Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
     */
-    @media screen and (min-width: 1200px) {
-    .fundo-img{
-        margin: 0px 4% 0px 20%;
-    }
-     .fundo-img img{
+@media screen and (min-width: 1200px) {
+    .fundo-img img{
         width:100%;
-        height:80%;
+        height:100%;
     }
 
 
@@ -485,28 +431,27 @@
    		color: yellow;
    	}
     .contato{
-      margin: 20px 400px;
+      margin: 20px 300px;
+
     }
 
     .contato form p #id_nome {
-      -webkit-border-radius: 55px;
-      -moz-border-radius: 55px;
-      border-radius: 55px;
+
       background-color:black;
       color: white;
       font-size: 30px;
     }
-    
+
     .contato form label {
       font-size: 30px;
+      margin-right: 50px;
+
 
 
     }
 
     .contato form p #id_dd_telefone {
-      -webkit-border-radius: 55px;
-      -moz-border-radius: 55px;
-      border-radius: 55px;
+
       background-color: black;
       color: white;
       font-size: 30px;
@@ -514,26 +459,19 @@
       width: 80px;
     }
     .contato form p #id_numero_telefone {
-      -webkit-border-radius: 55px;
-      -moz-border-radius: 55px;
-      border-radius: 55px;
       background-color: black;
       color: white;
       font-size: 30px;
 
     }
     .contato form p #id_email {
-      -webkit-border-radius: 55px;
-      -moz-border-radius: 55px;
-      border-radius: 55px;
+
       background-color: black;
       color: white;
       font-size: 30px;
     }
     .contato form p #id_texto {
-      -webkit-border-radius: 55px;
-      -moz-border-radius: 55px;
-      border-radius: 20px;
+
       background-color: black;
       color: white;
       font-size: 30px;
@@ -541,42 +479,34 @@
 
     .contato form input{
         font-size: 40px;
-
-
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 20px;
         background-color: black;
         color: white;
 
     }
-    .events {
 
-
+    .events{
+      margin: 0px;
     }
-    .events ul{
-
-
-
-    }
-    .events ul li{
+    .events ul a li{
         list-style-type: none;
         background-color: black;
-
         padding: 20px;
         margin: 20px;
-        border-radius: 20px;
+        border-spacing: 20px;
     }
 
 
-    .events ul li a{
+
+    .events ul a{
         text-decoration: none;
         color: white;
-        float: left;
+        text-align: center;
 
     }
-    .events ul li img{
+    .events ul a li img{
         margin: 20px;
+        width: 300px;
+        height: 300px;
 
     }
    	.rodape{

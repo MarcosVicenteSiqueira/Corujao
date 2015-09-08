@@ -34,6 +34,10 @@ urlpatterns = [
 
                   url(r'^event/(?P<slug>[\w_-]+)/$', 'core.views.event', name='event'),
 
+                  url(r'^foto/(?P<slug>[\w_-]+)/$', 'core.views.foto', name='foto'),
+
+                  url(r'^album/(?P<slug>[\w_-]+)/$', 'core.views.album', name='album'),
+
                   url(r'^admin/', include(admin.site.urls)),
 
                   url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

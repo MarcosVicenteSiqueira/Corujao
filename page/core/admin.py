@@ -1,6 +1,6 @@
 # _*_ coding: utf-8 _*_
 from django.contrib import admin
-from .models import Event, Contact, Comment
+from .models import Event, Contact, Comment, Galeria, Foto
 
 from photologue.admin import GalleryAdmin as GalleryAdminDefault
 from photologue.models import Gallery
@@ -11,12 +11,19 @@ class GalleryExtendedInline(admin.StackedInline):
     can_delete = False
 
 class GalleryAdmin(GalleryAdminDefault):
-
     inlines = [GalleryExtendedInline, ]
 
 
 class  QuestionAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'imagem', 'slug',)
+    list_display = ('titulo',)
+
+
+class GaleriaAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug':('nome',)}
+
+class FotoAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug':('name',)}
+
 
 
 
@@ -36,3 +43,5 @@ admin.site.register(Contact)
 admin.site.register(Comment)
 admin.site.unregister(Gallery)
 admin.site.register(Gallery, GalleryAdmin)
+admin.site.register(Galeria,GaleriaAdmin)
+admin.site.register(Foto, FotoAdmin)
