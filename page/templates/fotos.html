@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
-<p>{{foto.name}}</p>
-<img src="{{foto.slug}}">
-<p>{{foto.descricao}}</p>
+{% block content %}
+    <p>{{ foto.galeria }}  - galeria</p>
+    <p>{{foto.name}}</p>
+    <img src="/media/{{ foto.imagem }}">
+    <p>{{foto.descricao}}</p>
+    <p>vagraherth</p>
+{% endblock %}

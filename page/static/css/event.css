@@ -6,7 +6,7 @@
 
 	   .menu-events nav ul{
 			list-style-type: none;
-			background-color: gray;
+			background-color: black;
 			margin: -10px -20px 0px -10px;
 			padding: 10px 0px;
 	   		position: fixed;
@@ -28,14 +28,13 @@
 
   		.imagem-events {
      		width:100%;
-     		height:50%;
+     		height:100%;
         }
-
-
-#menu-home{
-	background-color: gray;
-	padding: 10px;
-	border-radius: 10px;
+		.texto {
+			text-align: justify;
+			font-size: 15px;
+			padding: 20px;
+	}
 }
 
 
@@ -49,7 +48,7 @@
 		}
 		 .menu-events  nav ul{
       		list-style-type: none;
-      		background-color: gray;
+      		background-color: black;
       		margin: -10px -20px 0px -20px;
       		padding: 10px 0px;
       		position: fixed;
@@ -62,15 +61,18 @@
       		padding: 50px 10px 20px 10px;
 
      	}
-
-
+		.texto{
+			text-align: justify;
+			font-size: 15px;
+			padding: 20px;
+		}
        	.menu-events nav ul li a{
-        		color: white;
-        		text-decoration: none;
+        	color: white;
+        	text-decoration: none;
         }
         .imagem-events {
      		width:100%;
-     		height:60%;
+     		height:100%;
         }
 
     }
@@ -86,59 +88,54 @@
 		}
 		 .menu-events nav ul{
     		list-style-type: none;
-    		background-color: gray;
+    		background-color: black;
     		margin: -10px -20px 0px -20px;
     		padding: 10px 0px;
     		position: fixed;
     		width: 100%;
     	}
     	 .menu-events nav ul li{
-	    		display: inline;
-	    		margin: 10px 20px 0px 10px;
-	    		font-size: 20px;
-	    		padding: 50px 10px 50px 10px;
-
+	    	display: inline;
+	    	margin: 10px 20px 0px 10px;
+	    	font-size: 20px;
+	    	padding: 50px 10px 50px 10px;
    		}
-
-
+		.texto{
+			text-align: justify;
+			font-size: 15px;
+			padding: 20px;
+		}
      	 .menu-events  nav ul li a{
       		color: white;
       		text-decoration: none;
       	}
       	.imagem-events {
      		width:100%;
-     		height:80%;
+     		height:100%;
         }
-
-
     }
 
     /*
      Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
     */
-    @media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1200px) {
     	.cabecalho-texto{
 			text-align: center;
 			font-size: 30;
 		}
 		 .menu-events  nav ul{
 			list-style-type: none;
-	    background-color: black;
+	    	background-color: black;
 			position: fixed;
-	    width: 100%;
+	    	width: 100%;
+			margin: 0px 20px 0px 20px;
 			margin: -10px -20px 0px -20px;
-
 		}
 		 .menu-events nav ul li{
 			display: inline;
-
-			margin: 0px 20px 0px 20px;
 			font-size: 20px;
 			padding: 50px 20px 50px 20px;
-
 		}
-
-
  		 .menu-events  nav ul li a{
 	  		color: white;
   		}
@@ -150,7 +147,6 @@
         border-radius: 20px;
         background-color: black;
         color: white;
-
       }
       .voltar-home a {
         text-decoration: none;
@@ -160,23 +156,23 @@
         padding-left: 20px;
       }
 
-			.cabecalho-texto{
-				margin: 10px 20px ;
-
-			}
-			.cabecalho-texto  h1{
-				text-align: center;
-				font-size: 55px;
-				margin: 20px 0px;
-
-		}
-		.cabecalho-texto p {
-				font-size: 15px;
-				padding: 20px;
+	.cabecalho-texto  h1{
+		text-align: center;
+		font-size: 55px;
+		margin: 20px 0px;
 	}
-  		.imagem-events {
-     		width:100%;
-     		height:80%;
-        }
-
+	.texto {
+		text-align: justify;
+		font-size: 15px;
+		padding: 20px;
+	}
+  	.imagem-events {
+ 		width:100%;
+ 		height:100%;
     }
+
+}
+
+#test{
+	width: 30px;
+}

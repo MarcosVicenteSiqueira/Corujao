@@ -9,24 +9,17 @@
 
 	{% block content %}
 	{% include "menu-events.html" %}
-	</br>
-	<div class="voltar-home">
-		<a href=" {% url 'core.views.home' %}">
-			<h2>Voltar ao Home</h2>
-		</a>
-	</div>
+
 
 		<img  id="imagens" class="imagem-events" src="/media/{{ event.imagem }} ">
 		<div class="cabecalho-texto">
 			<h1>{{ event.titulo }}</h1>
-			<p class="cabecalho-texto">{{ event.text }}</p>
+			<p class="texto">{{ event.text }}</p>
 		</div>
 
-<a href="media/foto/{{event.galeria}}">test</a>
+
 
 
 	
-
-		{% include "comment.html" %}
 		{% include "rodape.html" %}
 	{% endblock %}

@@ -1,11 +1,12 @@
+{% load staticfiles %}
+
+
 <div class="menu-events">
 	<nav>
 		<ul>
-			<li id="menu-home"><a href=" {% url 'core.views.home' %}">Home</a></li>
-			<li><a href="#historia">Historia</a></li>
-			<li><a href="#imagens">Imagens</a></li>
-			<li><a href="#comentarios">Comentarios</a></li>
+			<li id="menu-home"><a href=" {% url 'core.views.home' %}"><img id="test"  src="{% static 'imagens/Home.png' %}"/>Home</a></li>
+			<li><a href="#historia"><img id="test"  src="{% static 'imagens/Historia.png' %}"/>Historia</a></li>
+			<li><a href="#imagens"><img id="test"  src="{% static 'imagens/Imagens.png' %}"/>Imagens</a></li>
 		</ul>
-
 	</nav>
 </div>

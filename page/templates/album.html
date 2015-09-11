@@ -1,6 +1,12 @@
 {% extends "base.html" %}
-{%for albuns in album %}
-    <p>{{ albuns.nome }}<p>
-    <img src="{{albuns.name}}">
+{% block title%} Album {% endblock%}
+
+{% load staticfiles %}
+{% for album in foto %}
+    <img src="/media/{{album.imagem}}">
 {% endfor %}
-<img src="{{albuns.foto}}">
+
+
+    <p>{{foto.name}}</p>
+{% include "rodape.html" %}
+{% endblock %}

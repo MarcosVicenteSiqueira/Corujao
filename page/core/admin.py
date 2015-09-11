@@ -1,6 +1,6 @@
 # _*_ coding: utf-8 _*_
 from django.contrib import admin
-from .models import Event, Contact, Comment, Galeria, Foto
+from .models import Event, Contact, Comment,  Foto
 
 from photologue.admin import GalleryAdmin as GalleryAdminDefault
 from photologue.models import Gallery
@@ -43,5 +43,4 @@ admin.site.register(Contact)
 admin.site.register(Comment)
 admin.site.unregister(Gallery)
 admin.site.register(Gallery, GalleryAdmin)
-admin.site.register(Galeria,GaleriaAdmin)
 admin.site.register(Foto, FotoAdmin)

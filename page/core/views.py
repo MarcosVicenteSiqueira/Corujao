@@ -6,12 +6,13 @@ from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from django.forms import forms
 
-from .models import Event, Contact, Comment, Foto, Galeria
+from .models import Event, Contact, Comment, Foto
 from forms import ContactForm, CommentForms
 
 def home(request):
         contatos = Contact.objects.all()
         events = Event.objects.all()
+
         if request.method == 'POST':
             form = ContactForm(request.POST)
             if form.is_valid():
@@ -57,9 +58,12 @@ def foto(request, slug):
     { 'foto':foto,}
     )
 
-def album(request, slug):
-    album =  Galeria.objects.all()
-    return render(request, 'album.html',{'album':album})
+def album(request):
+    foto =  Foto.objects.all()
 
+    return render(request, 'album.html', {
+            'foto':foto,
+        }
+    )
 def thanks(request):
     return render(request, 'thanks.html')
