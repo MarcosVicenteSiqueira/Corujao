@@ -2,11 +2,35 @@
 {% block title%} Album {% endblock%}
 
 {% load staticfiles %}
-{% for album in foto %}
-    <img src="/media/{{album.imagem}}">
-{% endfor %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/smoothbox.css' %}" media="(max-width: 1920px)"/
+
+<header>
+    <p>Album de fotos Corujão</p>
+</header>
+
+  <div class="fotos">
+    <ul>
+        {% for album in foto %}
+            <li><img class="sb" id="tamanho-foto" src="/media/{{album.imagem}}" alt="{{album.descricao}}"   /></li>
+          {% endfor %}
+      </ul>
+    </div>
+
+    <div class="pagination">
+        {% for num in foto.paginator.page_range %}
+            {% ifequal num foto.number %}
+            <span class="ok"><b>{{ num }}</b></span>
+            {% else %}
+            <a class="next" href="?page={{ num }}"> {{ num }}</a>
+            {% endifequal %}
+        {% endfor %}
+    </div>
 
 
-    <p>{{foto.name}}</p>
+
+
 {% include "rodape.html" %}
+<script type="text/javascript" src="{% static 'js/jquery.js'%}"></script>
+
 {% endblock %}

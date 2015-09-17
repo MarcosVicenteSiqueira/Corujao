@@ -19,40 +19,40 @@
 			</header>
 			<p class="historia-geral-texto"> historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia historia </p>
 		</div>
+	</div>
 
-		<div class="events"  id="eventos">
-			<ul>
-			{% for event in events %}
-				<a href="event/{{ event.slug }}">
-					<li>
-						<h2>{{ event.titulo}}</h2>
-						<img src="media/{{ event.imagem}}">
-					</li>
-				</a>
-			{% endfor %}
-			</ul>
-		</div>
-
-		<div  class="social" id="rede-social">
-			<img src="{% static "imagens/Facebook.png" %}">
-			<img src="{% static "imagens/Instagram.png" %}" id="rede-social">
-			<img src="{% static "imagens/Twitter.png" %}">
-		</div>
-
-		<div id="contatos" class="contato">
-
-				<form action="." method="POST">{% csrf_token %}
-    				{{form.as_p }}
-    				<input type="submit" value="Enviar">
-				</form>
-		</div>
-
-
-
+	<div class="events"  id="eventos">
+		<ul>
+		{% for event in events %}
+			<a href="event/{{ event.slug }}">
+				<li>
+					<h2>{{ event.titulo}}</h2>
+					<img src="media/{{ event.imagem}}">
+				</li>
+			</a>
+		{% endfor %}
+		</ul>
 	</div>
 
 
 
+	<div  class="social" id="rede-social">
+		<a href=""><img src="{% static "imagens/Facebook.png" %}"></a>
+		<a href=""><img src="{% static "imagens/Instagram.png" %}" id="rede-social"></a>
+		<a href=""><img src="{% static "imagens/Twitter.png" %}"></a>
+	</div>
+
+	<div class="album" id="album-fotos">
+		<a href="/album/">foto</a>
+	</div>
+
+
+	<div id="contatos" class="contato">
+			<form action="." method="POST">{% csrf_token %}
+				{{form.as_p }}
+				<input type="submit" value="Enviar">
+			</form>
+	</div>
 
 
 	{% include "rodape.html" %}

@@ -123,55 +123,62 @@
 			text-align: center;
 			font-size: 30;
 		}
-		 .menu-events  nav ul{
+		.menu-evnets{
+			display: -webkit-flex;
+		      display: flex;
+		      -webkit-flex-direction: row;
+		      flex-direction: row;
+		}
+		.menu-events  nav ul{
 			list-style-type: none;
 	    	background-color: black;
 			position: fixed;
 	    	width: 100%;
 			margin: 0px 20px 0px 20px;
 			margin: -10px -20px 0px -20px;
+
+
+
 		}
-		 .menu-events nav ul li{
+		.menu-events nav ul li{
 			display: inline;
 			font-size: 20px;
 			padding: 50px 20px 50px 20px;
 		}
- 		 .menu-events  nav ul li a{
+ 		.menu-events  nav ul li a{
 	  		color: white;
   		}
-      .voltar-home{
-        margin-top: 40px;
-        font-size: 30px;
-        -webkit-border-radius: 55px;
-        -moz-border-radius: 55px;
-        border-radius: 20px;
-        background-color: black;
-        color: white;
-      }
-      .voltar-home a {
-        text-decoration: none;
-        color: white;
-      }
-      .voltar-home a h2{
-        padding-left: 20px;
-      }
-
-	.cabecalho-texto  h1{
-		text-align: center;
-		font-size: 55px;
-		margin: 20px 0px;
+        .voltar-home{
+	        margin-top: 40px;
+	        font-size: 30px;
+	        -webkit-border-radius: 55px;
+	        -moz-border-radius: 55px;
+	        border-radius: 20px;
+	        background-color: black;
+	        color: white;
+      	}
+        .voltar-home a {
+	        text-decoration: none;
+	        color: white;
+      	}
+        .voltar-home a h2{
+        	padding-left: 20px;
+      	}
+		.cabecalho-texto  h1{
+			text-align: center;
+			font-size: 55px;
+			margin: 20px 0px;
+		}
+		.texto {
+			text-align: justify;
+			font-size: 15px;
+			padding: 20px;
+		}
+  		.imagem-events {
+ 			width:100%;
+ 			height:100%;
+    	}
 	}
-	.texto {
-		text-align: justify;
-		font-size: 15px;
-		padding: 20px;
-	}
-  	.imagem-events {
- 		width:100%;
- 		height:100%;
-    }
-
-}
 
 #test{
 	width: 30px;

@@ -45,9 +45,7 @@ INSTALLED_APPS = (
     'core',
      # ...other installed applications,
     'django.contrib.sitemaps',
-    'photologue',
-    'sortedm2m',
-    'taggit',
+    
 #
 
 )

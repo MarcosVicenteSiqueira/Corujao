@@ -1,8 +1,8 @@
 # _*_ coding: utf-8 _*_
 from django import forms
 
-from .models import Contact, Comment
-    
+from .models import Contact
+
 class ContactForm(forms.Form):
     nome = forms.CharField(label='Nome', max_length=100)
     dd_telefone = forms.CharField(label='dd',max_length=2)
@@ -34,35 +34,3 @@ class ContactForm(forms.Form):
 
         novo_contato.save()
         return novo_contato
-
-class CommentForms(forms.Form):
-
-    name_comment = forms.CharField(label ="Nome", max_length=100)
-    email = forms.URLField(label="Email",max_length=200)
-    comentario = forms.CharField(widget=forms.Textarea)
-
-    def save(self, comment=None):
-        name_comment = self.cleaned_data.get("name_comment")
-        email = self.cleaned_data.get("email")
-        comentario = self.cleaned_data.get("comentario")
-
-        if comment:
-            comment.name_comment = name_comment
-            comment.email = email
-            comment.comentario = comentario
-
-        else:
-            novo_comment = Comment(
-                name_comment = name_comment,
-                email = email,
-                comentario = comentario
-
-        )
-        novo_comment.save()
-        return novo_comment
-
-
-
-
-
-

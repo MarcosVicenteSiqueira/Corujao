@@ -3,8 +3,9 @@
 from django.core.urlresolvers import reverse
 # Create your models here.
 from django.db import models
-from photologue.models import Gallery
-from taggit.managers import TaggableManager
+from django.utils.translation import ugettext_lazy as _
+
+
 
 
 class Event(models.Model):
@@ -24,28 +25,11 @@ class Event(models.Model):
     def __unicode__(self):
         return self.titulo
 
-class GalleryExtended(models.Model):
-    gallery = models.OneToOneField(Gallery, related_name='extended')
-    tags = TaggableManager(blank=True)
-
-
-    class Meta:
-        verbose_name = u'Extra fields'
-        verbose_name_plural = u'Extra fields'
-
-    def __unicode__(self):
-        return self.gallery.title
-
-
-
-
 class Foto(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(_('Nome'),max_length=200)
     slug = models.SlugField(unique=True)
     imagem = models.ImageField(upload_to='foto/')
     descricao = models.TextField(blank=True)
-
-
 
     def __unicode__(self):
         return self.name
@@ -62,13 +46,3 @@ class Contact(models.Model):
 
     def  __unicode__(self):
         return self.nome
-
-class Comment(models.Model):
-    name_comment = models.CharField(max_length=100)
-    data_comment = models.DateField('data published')
-    email = models.URLField(max_length=200)
-    cometario = models.TextField()
-
-
-    def __unicode__(self):
-        return self.name_comment

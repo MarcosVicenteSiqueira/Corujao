@@ -30,7 +30,6 @@ urlpatterns = [
 
                   url(r'^grappelli/', include('grappelli.urls')),
 
-                  url(r'^photologue/', include('photologue.urls')),
 
                   url(r'^event/(?P<slug>[\w_-]+)/$', 'core.views.event', name='event'),
 
