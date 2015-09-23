@@ -1,6 +1,9 @@
 .fotos{
     margin: 20px 100px;
 }
+#fotos-galeria{
+    width: 100%;
+}
 .fotos  ul li  {
     list-style-type: none;
     display: inline;
@@ -32,4 +35,14 @@
 }
 a.next {
     text-decoration: none;
+}
+#voltar-home{
+    border: 1px solid;
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+}
+#voltar-home a{
+    text-decoration: none;
+    color: white;
 }

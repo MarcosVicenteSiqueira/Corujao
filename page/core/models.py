@@ -26,8 +26,11 @@ class Event(models.Model):
         return self.titulo
 
 class Foto(models.Model):
+    class Meta:
+        ordering = ('-name',)
     name = models.CharField(_('Nome'),max_length=200)
     slug = models.SlugField(unique=True)
+    data = models.DateTimeField(auto_now_add = True)
     imagem = models.ImageField(upload_to='foto/')
     descricao = models.TextField(blank=True)
 

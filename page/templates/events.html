@@ -11,15 +11,15 @@
 	{% include "menu-events.html" %}
 
 
-		<img  id="imagens" class="imagem-events" src="/media/{{ event.imagem }} ">
+		<img  id="historia" class="imagem-events" src="/media/{{ event.imagem }} ">
 		<div class="cabecalho-texto">
 			<h1>{{ event.titulo }}</h1>
 			<p class="texto">{{ event.text }}</p>
 		</div>
 
+		<div id="imagens">
+			<a href="{% url 'core.views.album' %}"><img id="fotos-galeria" class="galeria-fotos" src="{% static "imagens/galeria.png" %}"></a>
+		</div>
 
-
-
-	
 		{% include "rodape.html" %}
 	{% endblock %}
